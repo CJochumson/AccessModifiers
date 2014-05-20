@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AccModLib\AccModLib.csproj">
+    <ProjectReference Include="..\AccModLib\AccessModifiersLib.csproj">
       <Project>{f66807a4-0f1b-45fd-9680-200b344186ea}</Project>
-      <Name>AccModLib</Name>
+      <Name>AccessModifiersLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AccModLib;
+using AccessModifiersLib;
 
 namespace AccessModifiers
 {
@@ -12,27 +12,37 @@ namespace AccessModifiers
         static void Main(string[] args)
         {
             Shape shape = new Shape();
-            shape.indexPublic = 0;
-            //shape.indexProtected = 0;
-            //shape.indexInternal = 0;
-            //shape.indexProtectedInternal = 0;
+            shape.PublicField = 0;
+            //shape.ProtectedField = 0;
+            //shape.InternalField = 0;
+            //shape.ProtectedInternalField = 0;
+            //shape.PrivateField = 0;
+            //shape.Field = 0;
+
             Shape rect = new Rect();
-            rect.indexPublic = 0;
-            //rect.indexProtected = 0;
-            //rect.indexInternal = 0;
-            //rect.indexProtectedInternal = 0;
+            //rect.PublicField = 0;
+            //rect.ProtectedField = 0;
+            //rect.InternalField = 0;
+            //rect.ProtectedInternalField = 0;
+            //rect.PrivateField = 0;
+            //rect.Field = 0;
+
+            Abstract.Test();
+            Virtual.Test();
+            Console.ReadLine();
         }
 
-        private class Rect : Shape
+        class Rect : Shape
         {
             public Rect()
             {
-                this.indexPublic = 0;
-                this.indexProtected = 0;
-                //this.indexInternal = 0;
-                this.indexProtectedInternal = 0;
+                PublicField = 0;
+                ProtectedField = 0;
+                //InternalField = 0;
+                ProtectedInternalField = 0;
+                //PrivateField = 0;
+                //Field = 0;
             }
         }
-
     }
 }
